@@ -15,6 +15,7 @@
     flex-direction: column;
     align-items: center;
     gap: 40px;
+    margin-top: 30px;
 }
 .logos {
     display: flex;
@@ -25,13 +26,10 @@
 }
 
 img {
-    max-width: 47%;
+    max-width: 46%;
 }
 
 @media (max-width: 767px) {
-    .footer {
-        margin-top: 30px;
-    }
     .logos {
         gap: 20px;
     }

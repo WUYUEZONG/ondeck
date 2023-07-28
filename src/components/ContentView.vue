@@ -1,3 +1,6 @@
+<script setup>
+const icons = ['Capterra Logo', 'AlternativeTo Logo']
+</script>
 <template>
     <div class="content">
         <div class="content-main">
@@ -12,16 +15,12 @@
             <button>Try for free</button>
             <div class="content-footer">
                 <span>5.0 Rating based on reviews from:</span>
-                <img src="/src/Assets/Fiber_Icon.svg" alt="Fiber_Icon" />
-                <img src="/src/Assets/Fiber_Icon.svg" alt="Fiber_Icon" />
-                <img src="/src/Assets/Fiber_Icon.svg" alt="Fiber_Icon" />
+                <img v-for='icon in icons' :key="icon" :src="'/src/Assets/' + icon + '.svg'" :alt="icon" />
             </div>
         </div>
         <img class="info-img" src="/src/Assets/Hero Image.png" alt="" />
     </div>
 </template>
-<script setup>
-</script>
 <style scoped>
 .content {
     display: flex;
@@ -29,6 +28,7 @@
     font-size: 1.1rem;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 }
 
 .content-main {
@@ -39,6 +39,7 @@
     min-width: 340px;
     flex: 1;
 }
+
 .content-footer {
     display: flex;
     gap: 20px;
@@ -54,24 +55,28 @@
 }
 
 .light {
-    color: yellow;
+    color: var(--yellow);
 }
 
 .info-img {
-  width: 340px;
-  height: auto;
+    width: 340px;
+    height: auto;
 }
 
 @media (max-width: 767px) {
     .title {
         font-size: 2.9rem;
     }
+
     .content-footer {
         gap: 10px;
     }
+
+    .content-footer img {
+        width: 20px;
+    }
+
     .info-img {
         display: none;
     }
-}
-
-</style>
+}</style>

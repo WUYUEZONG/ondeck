@@ -24,6 +24,8 @@ body {
   display: flex;
   justify-content: center;
   font-size: 1.1rem;
+  background-color: var(--backgroundColor);
+  color: var(--textColor);
 }
 .container {
   width: calc(100vw - 30px);
@@ -47,7 +49,7 @@ body {
 }
 
 button {
-  background-color: green;
+  background-color: var(--buttonBgColor);
   padding: 12px 20px;
   border: 0;
   border-radius: 3px;
