@@ -2,10 +2,10 @@
     <div class="footer">
         <span>Trusted by 3+ million people at companies like</span>
         <div class="logos">
-            <img src="/src/Assets/Netflix Logo.svg" alt="" />
-            <img src="/src/Assets/Shopify Logo.svg" alt="" />
-            <img src="/src/Assets/Spotify Logo.svg" alt="" />
-            <img src="/src/Assets/Walmart Logo.svg" alt="" />
+            <img src="@/Assets/NetflixLogo.svg" alt="" />
+            <img src="@/Assets/ShopifyLogo.svg" alt="" />
+            <img src="@/Assets/SpotifyLogo.svg" alt="" />
+            <img src="@/Assets/WalmartLogo.svg" alt="" />
         </div>
     </div>
 </template>

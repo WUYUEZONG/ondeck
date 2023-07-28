@@ -1,5 +1,5 @@
 <script setup>
-const icons = ['Capterra Logo', 'AlternativeTo Logo']
+const icons = ['CapterraLogo', 'AlternativeToLogo']
 </script>
 <template>
     <div class="content">
@@ -15,10 +15,10 @@ const icons = ['Capterra Logo', 'AlternativeTo Logo']
             <button>Try for free</button>
             <div class="content-footer">
                 <span>5.0 Rating based on reviews from:</span>
-                <img v-for='icon in icons' :key="icon" :src="'/src/Assets/' + icon + '.svg'" :alt="icon" />
+                <img v-for='icon in icons' :key="icon" :src="'@/Assets/' + icon + '.svg'" :alt="icon" />
             </div>
         </div>
-        <img class="info-img" src="/src/Assets/Hero Image.png" alt="" />
+        <img class="info-img" src="@/Assets/HeroImage.png" alt="" />
     </div>
 </template>
 <style scoped>

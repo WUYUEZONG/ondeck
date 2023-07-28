@@ -1,7 +1,7 @@
 <template>
     <div class="header-board">
         <div class="logo">
-            <img src="/src/Assets/Logo.svg" alt="logo" />
+            <img src="@/Assets/Logo.svg" alt="logo" />
         </div>
         <div class="menu-content">
             <div v-for="i in menuItems" :key="i.name" class="menu-item">
@@ -14,7 +14,7 @@
             <button class="button" @click="doSomething">Try for free</button>
         </div>
         <span class="expand-menu">
-            <img src="/src/Assets/Menu.svg" alt="" @click="showMenus" />
+            <img src="@/Assets/Menu.svg" alt="" @click="showMenus" />
             <MenuMinPop ref="minMenu" :menuItems="menuItems" />
         </span>
     </div>
