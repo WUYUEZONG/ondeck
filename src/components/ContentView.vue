@@ -15,7 +15,7 @@ const icons = ['CapterraLogo', 'AlternativeToLogo']
             <button>Try for free</button>
             <div class="content-footer">
                 <span>5.0 Rating based on reviews from:</span>
-                <img v-for='icon in icons' :key="icon" :src="'@/Assets/' + icon + '.svg'" :alt="icon" />
+                <img v-for='icon in icons' :key="icon" :src="'/src/Assets/' + icon + '.svg'" :alt="icon" />
             </div>
         </div>
         <img class="info-img" src="@/Assets/HeroImage.png" alt="" />
