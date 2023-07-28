@@ -1,28 +1,57 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import HeaderView from './components/HeaderView.vue';
+import ContentView from './components/ContentView.vue'
+import FooterView from './components/FooterView.vue'
+
 </script>
 
 <template>
-  <header>
-    <div>logo</div>
-    <div> menus </div>
-    <div> login </div>
-  </header>
-
-  <main>
-    <div class="content">
-      <span>Ondeck is your remote</span>
-      <span>conference calling tool</span>
-      <div>
-        Ondeck is a service that allows you to create beautiful, online, and encrypted video calls for you and your remote team.
+  <div class="container">
+    <header class="header">
+      <HeaderView />
+    </header>
+    <main>
+      <div class="center-content">
+        <ContentView />
       </div>
-    </div>
-    <div>
-      <img src="/src/Assets/Hero Image.png" alt="" />
-    </div>
-  </main>
+    </main>
+    <FooterView />
+  </div>
 </template>
 
-<style scoped>
+<style>
+body {
+  display: flex;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+.container {
+  width: calc(100vw - 30px);
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.center-content {
+  display: flex;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+
+@media (max-width: 767px) {
+    .container {
+        gap: 40px;
+    }
+}
+
+button {
+  background-color: green;
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  color: white;
+}
 </style>
