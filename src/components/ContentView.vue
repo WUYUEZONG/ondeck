@@ -75,6 +75,6 @@
     }
 
     .info-img {
-        display: none;
+        /* display: none; */
     }
 }</style>

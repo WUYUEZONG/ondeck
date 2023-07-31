@@ -21,14 +21,20 @@ import FooterView from './components/FooterView.vue'
 
 <style>
 body {
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
   font-size: 1.1rem;
   background-color: var(--backgroundColor);
   color: var(--textColor);
 }
+
+#app {
+  display: flex;
+  justify-content: center;
+}
+
 .container {
-  width: calc(100vw - 30px);
+  width: calc(100vw - 10%);
   max-width: 1200px;
   display: flex;
   flex-direction: column;
